@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  /* background-color: #625; */
+  /* color: #eee; */
+  text-align: center;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+p {
+  max-width: 55ch;
+  margin: auto;
+}
+h1 {
+    font-size: 3rem;
+}
+#about img {
+  width: 100%;
+}
+nav {
+  /* color: #000; */
+}
+nav img {
+  /* position: fixed; */
+  /* background: #222; */
+  top: 0;
+  left: 0;
+}
+
+header {
+  /* background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit; */
+  background: #000
+    url(https://static.wixstatic.com/media/5b1f74_c532a74730884d2bb765436895d269b2~mv2.jpg)
+    center/cover no-repeat content-box border-box fixed;
+  padding: 20vh 10vw;
+  position: relative;
+  z-index: 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  text-align: left;
+}
+
+header::before {
+  position: absolute;
+  content: "";
+  background: linear-gradient(90deg, #490394, #fff0);
+  /* opacity: 0.5; */
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+header p {
+  max-width: 55ch;
+  font-size: 1.2em;
+}
+
+footer p {
+  max-width: 55ch;
+  margin: auto;
+  font-size: 1.2em;
+}
+footer ul {
+  margin: 20px;
+}
+
+@media (max-width: 55rem) {
+    #about {
+        padding: 7vh;
+    }
+  #about img {
+    max-width: 400px;
+    /* min-height: 30vh; */
+  }
+  
+}
